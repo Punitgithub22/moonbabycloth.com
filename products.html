@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - MoonBabyCloth</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png" alt="MoonBabyCloth Logo" id="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html?category=boys">Boys</a></li>
+                    <li><a href="products.html?category=girls">Girls</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html" id="auth-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-header">
+            <h1 id="category-title">Our Collection</h1>
+            <div class="filter-options">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="boys">Boys</button>
+                <button class="filter-btn" data-category="girls">Girls</button>
+            </div>
+        </section>
+
+        <section class="products-grid" id="products-container">
+            <!-- Products will be loaded here dynamically -->
+            <div class="loader">Loading products...</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MoonBabyCloth.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/products.js"></script>
+    <script type="module" src="../js/firebase-config.js"></script>
+</body>
+
+</html>
